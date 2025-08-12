@@ -26,7 +26,7 @@ def regex(data):
     pattern = r'\+7 \(...\) ...-..-..'
     re.findall(pattern, data)
 
-with open('UserData.txt', encoding='utf-8') as file:
+with open('files/UserData.txt', encoding='utf-8') as file:
     text = file.read()
 
 time1 = timeit('Maya1(text)', globals=globals(), number=10)
